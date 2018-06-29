@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Aviators"
+             x:Class="Aviators.MainPage"
+             BackgroundColor="#165aa5"
+             Title="MasterApp">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Master" BackgroundColor="#165aa5" >
+            <ContentPage.Content>
+                <StackLayout Padding="0, 0, 0, 0">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source = "aviLogo.png"
+                            WidthRequest="100"
+                            HeightRequest="100"
+                            Aspect="AspectFit"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Start"></Image>
+
+                        <StackLayout HorizontalOptions="Center"
+                                     VerticalOptions="Center">
+                            <Label Text="Хоккейный клуб"
+                                   TextColor="White"></Label>
+                            <Label Text="Авиаторы МАИ"
+                                   TextColor="White"></Label>
+                        </StackLayout>
+                    </StackLayout>
+                    
+                    <Button Text="Статистика"></Button>
+                    <Button Text="Results"></Button>
+                    
+
+                </StackLayout>
+
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+
+    <MasterDetailPage.Detail>
+        <ContentPage Title="Master" BackgroundColor="#165ab5" >
+            <ContentPage.Content>
+                <Label Text="JJJJJ?"></Label>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+
+
+</MasterDetailPage>
